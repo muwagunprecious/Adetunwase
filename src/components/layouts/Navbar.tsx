@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`fixed left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        className={`fixed left-0 w-full z-50 transition-all bg-black duration-300 ease-in-out ${
           isScrolled ?
             "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0 pointer-events-none"
@@ -72,7 +72,7 @@ const Navbar = () => {
             priority
             width={80}
             height={80}
-            className="lg:w-auto lg:h-auto w-90 py-4 flex mx-auto"
+            className="lg:w-auto lg:h-auto w-80 flex mx-auto"
           />
         </div>
 
@@ -149,9 +149,9 @@ const Navbar = () => {
               src="/emmanuelagida_logo.svg"
               alt="Emmanuel Agida Logo"
               priority
-              width={30}
-              height={30}
-              className="w-auto h-auto"
+              width={100}
+              height={100}
+              className="lg:w-auto lg:h-auto w-14"
             />
           </Link>
 
@@ -164,7 +164,7 @@ const Navbar = () => {
           >
             {isMobileMenuOpen ?
               <CircleX className="w-8 h-8" />
-            : <Menu className="w-8 h-8" />}
+            : <Menu className="w-6 h-6" />}
           </button>
         </nav>
       </div>
