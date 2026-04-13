@@ -5,7 +5,7 @@ import { useState } from "react";
 type ButtonProps = {
   icon?: React.ComponentType<{ size?: number; className?: string }>;
   primaryText: string;
-  variant?: "red" | "black" | "none";
+  variant?: "gold" | "black" | "none";
   hoverText?: string;
   iconPosition?: "left" | "right";
   onClick?: () => void;
@@ -15,7 +15,7 @@ type ButtonProps = {
 const Button = ({
   icon: Icon,
   primaryText,
-  variant = "red",
+  variant = "gold",
   hoverText,
   iconPosition = "left",
   onClick,
@@ -25,7 +25,7 @@ const Button = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const variantStyles = {
-    red: "bg-primaryGold hover:bg-primaryRed/90 active:bg-primaryGold/70",
+    gold: "bg-primaryGold hover:bg-primaryRed/90 active:bg-primaryGold/70",
     black: "bg-primaryBlack hover:bg-primaryBlack/90 active:bg-primaryBlack/70",
     none: "bg-none hover:underline active:bg-transparent",
   };
@@ -40,7 +40,7 @@ const Button = ({
       aria-disabled={props.disabled}
       className={`
         ${variantStyles[variant]}
-        inline-flex justify-center items-center px-6 py-3 h-12
+        inline-flex font-jost justify-center items-center px-6 py-3 h-12
         cursor-pointer text-white font-medium text-xs
         transition-all duration-300 ease-out hover:-translate-y-0.5
         focus:outline-none relative overflow-hidden

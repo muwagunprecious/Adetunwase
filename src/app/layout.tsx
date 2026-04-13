@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Jost } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
 import BackToTop from "@/components/ui/BackToTopButton";
 
 const jost = Jost({
   variable: "--font-jost",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -29,9 +24,9 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${jost.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${jost.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" cz-shortcut-listen="true">
+      <body className="flex flex-col" cz-shortcut-listen="true">
         <Navbar />
         {children}
         <BackToTop />
