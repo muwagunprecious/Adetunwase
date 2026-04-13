@@ -18,7 +18,7 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <Tag
       className={twMerge(
-        "font-bold text-white text-3xl sm:text-5xl md:text-7xl lg:text-5xl uppercase sm:leading-tight tracking-tighter leading-tight font-jost",
+        "font-bold text-white text-2xl sm:text-5xl md:text-7xl lg:text-5xl uppercase sm:leading-tight tracking-tighter leading-tight font-jost",
         className,
       )}
       {...props}

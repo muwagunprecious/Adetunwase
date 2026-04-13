@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@/components/layouts/Container";
 import Badge from "@/components/ui/Badge";
 import Heading from "@/components/ui/Heading";
@@ -46,7 +45,7 @@ const StatCard = ({ stat }: { stat: StatItem }) => {
 
 const Credibility = () => {
   return (
-    <section className="w-full font-jost">
+    <section className="w-full bg-primaryBlack font-jost">
       {/* Header */}
       <Container>
         <div className="mt-10 border-b border-white/10">
