@@ -1,12 +1,11 @@
-import React from "react";
 import Container from "@/components/layouts/Container";
 import Badge from "@/components/ui/Badge";
 import Heading from "@/components/ui/Heading";
-import Paragraph from "@/components/ui/Paragraph";
+// import Paragraph from "@/components/ui/Paragraph";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="w-full font-jost pt-5">
+    <section id="about-me" className="w-full bg-primatyBlack font-jost pt-5">
       {/* Header */}
       <Container>
         <div className="mt-10">

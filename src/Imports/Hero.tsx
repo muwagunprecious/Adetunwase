@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
     >
       <Container>
         {/* Hero Content */}
-        <div className="relative z-20 my-20 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
+        <div className="relative z-20 my-40 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
           <Image
             src="/hero_logo.svg"
             alt="Hero Logo"
