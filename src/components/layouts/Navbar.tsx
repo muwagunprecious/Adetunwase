@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../ui/Button";
-import { ArrowUpRight, CircleX, Menu, X } from "lucide-react";
+import { CircleArrowOutUpRight, CircleX, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -51,8 +51,12 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleLinkClick = (): void => {
-    setIsMobileMenuOpen(false);
+  // Function to handle "Get in Touch" button click and scroll to the "Contact" section
+  const handleLinkClick = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -70,6 +74,7 @@ const Navbar = () => {
             src="/emmanuelagida_brand_banner.svg"
             alt="Emmanuel Agida Brand Banner"
             priority
+            draggable={false}
             width={80}
             height={80}
             className="lg:w-auto lg:h-auto w-80 flex mx-auto"
@@ -77,7 +82,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop & Tablet Navbar */}
-        <nav className="bg-primaryBlack font-primaryFont py-4 hidden justify-between items-center px-4 sm:px-6 lg:px-6 w-full lg:flex">
+        <nav className="bg-primaryBlack font-primaryFont hidden justify-between items-center px-4 py-6 sm:px-6 lg:px-6 w-full lg:flex">
           {/* Brand logo */}
           <Link
             href="/"
@@ -89,6 +94,7 @@ const Navbar = () => {
               priority
               width={40}
               height={40}
+              draggable={false}
               className="w-auto h-auto"
             />
           </Link>
@@ -129,7 +135,7 @@ const Navbar = () => {
           <Button
             primaryText="GET IN TOUCH"
             hoverText="GET IN TOUCH"
-            icon={ArrowUpRight}
+            icon={CircleArrowOutUpRight}
             iconPosition="left"
             onClick={handleLinkClick}
             className="gap-2"
@@ -138,7 +144,7 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Navbar */}
-        <nav className="bg-primaryBlack w-full px-4 flex justify-between items-center md:hidden">
+        <nav className="bg-primaryBlack w-full px-4 py-6 flex justify-between items-center md:hidden">
           {/* Mobile Brand logo */}
           <Link
             href="/"
