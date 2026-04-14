@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { NavLinks } from "@/constants/navbar";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../ui/Button";
 import { CircleArrowOutUpRight, CircleX, Menu, X } from "lucide-react";
 
 const Navbar = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -102,30 +102,16 @@ const Navbar = () => {
           {/* Desktop navlinks */}
           <div className="flex justify-between items-center gap-10">
             {NavLinks.map(link => {
-              const isActive = pathname === link.href;
-
               return (
                 <Link
                   href={link.href}
                   key={link.label}
-                  className={`mx-2 text-xs relative transition-all duration-300 ease-out group ${
-                    isActive ?
-                      "text-white font-bold bg-[#6B4F1E] px-8 py-4 border-b-2 border-primaryGold hover:bg-[#7a5a22]"
-                    : "font-normal text-white hover:text-primaryGold py-3"
-                  }`}
+                  className="mx-2 font-normal text-white/60 hover:text-primaryGold py-3 text-xs relative transition-all duration-300 ease-out group"
                 >
-                  <span
-                    className={`transition-opacity duration-300 ${
-                      isActive ? "opacity-100" : "opacity-90"
-                    }`}
-                  >
-                    {link.label}
-                  </span>
+                  <span>{link.label}</span>
 
-                  {/* Animated underline — only for inactive links */}
-                  {!isActive && (
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-primaryGold transition-all duration-300 ease-out group-hover:w-full" />
-                  )}
+                  {/* Animated underline */}
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-0 bg-primaryGold group-hover:w-full transition-all duration-300 ease-out" />
                 </Link>
               );
             })}
@@ -212,20 +198,13 @@ const Navbar = () => {
         {/* Mobile navigation links */}
         <nav className="flex flex-col space-y-3">
           {NavLinks.map(link => {
-            const isActive = pathname === link.href;
-
             return (
               <Link
                 href={link.href}
                 key={link.label}
                 onClick={handleLinkClick}
                 className={`
-                  py-5 px-8 text-base transition-all duration-200 ease-out border-b border-b-white/20
-                  ${
-                    isActive ?
-                      "font-medium text-white hover:text-white/70"
-                    : "text-primaryWhite hover:text-white/70"
-                  }
+                  py-5 px-8 text-base text-white/70 transition-all duration-200 ease-out border-b border-b-white/20
                 `}
               >
                 {link.label}

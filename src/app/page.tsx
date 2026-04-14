@@ -1,6 +1,7 @@
 import AboutMe from "@/Imports/AboutMe";
 import Credibility from "@/Imports/Credibility";
 import Hero from "@/Imports/Hero";
+import Platforms from "@/Imports/Platforms";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       />
       <Credibility />
       <AboutMe />
+      <Platforms />
     </main>
   );
 }

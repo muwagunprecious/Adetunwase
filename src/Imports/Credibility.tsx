@@ -32,10 +32,10 @@ const StatCard = ({ stat }: { stat: StatItem }) => {
 
       {/* Stat number + label */}
       <div className="relative z-10">
-        <p className="text-2xl sm:text-3xl font-bold text-white leading-tight">
+        <p className="text-3xl sm:text-4xl font-bold text-white leading-tight">
           <span className="text-primaryGold">{stat.number}</span> {firstWord}
         </p>
-        <p className="text-2xl sm:text-3xl font-bold text-white leading-tight">
+        <p className="text-3xl sm:text-4xl font-bold text-white leading-tight">
           {rest}
         </p>
       </div>
