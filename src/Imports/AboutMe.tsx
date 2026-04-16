@@ -96,19 +96,19 @@ const AboutMe = () => {
     : undefined;
 
   return (
-    <section id="about-me" className="w-full bg-primatyBlack font-jost pt-5">
+    <section id="about-me" className="w-full bg-amber-50 font-jost pt-5">
       <Container>
-        <div className="mt-10">
-          <div className="border-b border-white/10 pb-5">
-            <Badge title="ABOUT ME" />
+        <div className="my-10">
+          <div className="border-b border-black/10 pb-5">
+            <Badge title="ABOUT ME" className="text-primaryBlack" />
           </div>
 
           <div className="flex flex-col mt-5 gap-2">
-            <Heading as="h3" className="lg:text-4xl font-bold">
+            <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack">
               Who Is <span className="text-primaryGold">Emmanuel Agida?</span>
             </Heading>
 
-            <Heading as="h3" className="lg:text-4xl font-bold min-h-12">
+            <Heading as="h3" className="lg:text-4xl font-bold min-h-12 text-primaryBlack">
               A <span className="text-primaryGold italic">{displayed}</span>
               <span className="inline-block w-0.75 h-[1.8rem] bg-primaryGold ml-1 align-middle animate-pulse" />
             </Heading>
@@ -117,11 +117,11 @@ const AboutMe = () => {
           {/* Content */}
           <div className="flex flex-col lg:flex-row gap-10 mt-8">
             {/* Text */}
-            <div className="w-full tracking-tighter lg:w-1/2 space-y-4 font-light">
+            <div className="w-full tracking-tighter lg:w-1/2 space-y-4 font-normal">
               {/* Always visible paragraphs */}
               <div ref={textRef} className="space-y-4">
                 {PREVIEW_PARAGRAPHS.map((para, i) => (
-                  <p key={i} className="text-white/50 text-lg lg:text-lg leading-relaxed text-justify">
+                  <p key={i} className="text-primaryBlack/70 text-lg lg:text-lg leading-relaxed text-justify">
                     {para}
                   </p>
                 ))}
@@ -134,7 +134,7 @@ const AboutMe = () => {
               >
                 <div ref={extraRef} className="space-y-4 pt-4">
                   {EXTRA_PARAGRAPHS.map((para, i) => (
-                    <p key={i} className="text-white/50 text-lg lg:text-lg leading-relaxed text-justify">
+                    <p key={i} className="text-primaryBlack/70 text-lg lg:text-lg leading-relaxed text-justify">
                       {para}
                     </p>
                   ))}
@@ -171,7 +171,7 @@ const AboutMe = () => {
               <Image
                 src="/emmanuelagida_portrait.svg"
                 alt="Emmanuel Agida"
-                className="w-full min-h-70 object-cover object-top"
+                className="w-full min-h-70 grayscale object-cover object-top"
                 width={400}
                 height={400}
                 priority
