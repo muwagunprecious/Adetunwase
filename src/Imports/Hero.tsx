@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
     >
       <Container>
         {/* Hero Content */}
-        <div className="relative z-20 my-40 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
+        <div className="relative z-20 my-20 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
           <Image
             src="/hero_logo.svg"
             alt="Hero Logo"
@@ -43,11 +43,16 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
             className="w-3xl mb-5"
           />
 
-          <Heading as="h1" className="font-bold mb-6 animate-fade-in-up text-3xl">
+          <Heading
+            as="h1"
+            className="font-bold mb-6 animate-fade-in-up text-3xl"
+          >
             {title}
           </Heading>
 
-          <Paragraph className="mb-8 tracking-tighter px-2 sm:px-0">{description}</Paragraph>
+          <Paragraph className="mb-8 tracking-tighter px-2 sm:px-0">
+            {description}
+          </Paragraph>
 
           <div className="flex flex-col md:mt-10 sm:flex-row gap-4 justify-center md:justify-start items-center animate-fade-in-up animation-delay-600">
             {button ?

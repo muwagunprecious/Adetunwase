@@ -16,3 +16,5 @@ export default function Home() {
     </main>
   );
 }
+
+// add a hover-to-tilt effect to the image in the about me section.
