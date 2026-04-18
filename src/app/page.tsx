@@ -13,6 +13,7 @@ export default function Home() {
       <Credibility />
       <AboutMe />
       <Platforms />
+      {/* Add your Compoent Here */}
     </main>
   );
 }

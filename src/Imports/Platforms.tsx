@@ -6,7 +6,7 @@ import Heading from "@/components/ui/Heading";
 
 const Platforms = () => {
   return (
-    <section id="platforms" className="w-full bg-primatyBlack font-jost pt-5">
+    <section id="platforms" className="w-full bg-primaryBlack font-jost pt-5">
       <Container>
         <div className="mt-10">
           <div className="border-b border-white/10 pb-5">
