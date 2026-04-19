@@ -121,6 +121,7 @@ const Navbar = () => {
           <Button
             primaryText="GET IN TOUCH"
             hoverText="GET IN TOUCH"
+            title="get in touch"
             icon={CircleArrowOutUpRight}
             iconPosition="left"
             onClick={handleLinkClick}
@@ -152,6 +153,7 @@ const Navbar = () => {
             onClick={toggleMobileMenu}
             className="p-2 cursor-pointer rounded-lg text-primaryGold hover:bg-primaryGold/10 transition-colors duration-200"
             aria-label="Toggle mobile menu"
+            title="open menu"
             aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ?
@@ -189,6 +191,7 @@ const Navbar = () => {
           <button
             onClick={toggleMobileMenu}
             className="p-2 cursor-pointer rounded-lg text-primaryWhite hover:bg-white/10 transition-colors duration-200"
+            title="close menu"
             aria-label="Close mobile menu"
           >
             <X className="w-8 h-8" />
