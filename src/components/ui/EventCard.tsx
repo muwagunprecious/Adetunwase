@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { EventCardProps } from "@/types/events";
 
-const EventCard = ({ id, title, date, location, imageSrc, url }: EventCardProps) => {
+const EventCard = ({ title, date, location, imageSrc, url }: EventCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
