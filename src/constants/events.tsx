@@ -1,0 +1,68 @@
+import { EventCardProps } from "@/types/events";
+
+export const eventList: EventCardProps[] = [
+  {
+    id: "event-01",
+    title: "Achiever summit",
+    date: "August 11th - 12th 2026",
+    location: "Flight Edition | Lagos - Nigeria by EAI",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-02",
+    title: "100Under40 Award",
+    date: "August 13th 2026",
+    location: "Lagos - Nigeria by EAI",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-03",
+    title: "Africa Renaissance Conference",
+    date: "May 21st 2027",
+    location: "London - United Kingdom by CentreGED",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-04",
+    title: "Achievers Summit (Bridge Edition)",
+    date: "August 12th & 13th 2027",
+    location: "Bridge Edition, Lagos - Nigeria by EAI",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-05",
+    title: "Leadership and Economic Development Masterclass",
+    date: "May 8th - 20th 2028",
+    location: "Ontario - Canada by IGE",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-06",
+    title: "Africa Tech, Tech & Energy Summit",
+    date: "September 14th - 16th 2028",
+    location: "Abuja - Nigeria by CentreGED",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-07",
+    title: "Africa Economic Summit",
+    date: "October 19th - 21st 2028",
+    location: "Monrovia - Liberia by CentreGED",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+  {
+    id: "event-08",
+    title: "Africa Governance Summit by CentreGED",
+    date: "November 16th - 18th 2028",
+    location: "Accra - Ghana by CentreGED",
+    imageSrc: "/events/sample_event.png",
+    url: "#link-to-event",
+  },
+];

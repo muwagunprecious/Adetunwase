@@ -2,6 +2,7 @@ import AboutMe from "@/Imports/AboutMe";
 import Credibility from "@/Imports/Credibility";
 import Hero from "@/Imports/Hero";
 import Platforms from "@/Imports/Platforms";
+import Events from "@/Imports/Events"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Credibility />
       <AboutMe />
       <Platforms />
+      <Events />
       {/* Add your Compoent Here */}
     </main>
   );
