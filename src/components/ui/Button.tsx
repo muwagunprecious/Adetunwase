@@ -10,6 +10,7 @@ type ButtonProps = {
   iconPosition?: "left" | "right";
   onClick?: () => void;
   className?: string;
+  title: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
@@ -20,6 +21,7 @@ const Button = ({
   iconPosition = "left",
   onClick,
   className = "",
+  title = "",
   ...props
 }: ButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -39,7 +41,7 @@ const Button = ({
       }
       aria-disabled={props.disabled}
       className={`
-        ${variantStyles[variant]}
+        ${variantStyles[variant]}${title}
         inline-flex font-jost justify-center items-center px-6 py-3 h-12
         cursor-pointer text-white font-medium text-xs
         transition-all duration-300 ease-out hover:-translate-y-0.5

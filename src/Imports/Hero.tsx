@@ -59,6 +59,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
               button
             : <>
                 <Button
+                  title="know more about me"
                   primaryText="KNOW MORE ABOUT ME"
                   hoverText="KNOW MORE ABOUT ME"
                   icon={UserStar}

@@ -119,6 +119,7 @@ const Navbar = () => {
 
           {/* Desktop button */}
           <Button
+            title="get in touch"
             primaryText="GET IN TOUCH"
             hoverText="GET IN TOUCH"
             icon={CircleArrowOutUpRight}
