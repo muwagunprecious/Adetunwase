@@ -3,13 +3,18 @@
 import { useState } from "react";
 import { PlatformCardProps } from "@/types/platforms";
 
-const PlatformCard = ({ title, description, imageSrc, url }: PlatformCardProps) => {
+const PlatformCard = ({
+  title,
+  description,
+  imageSrc,
+  url,
+}: PlatformCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <div
-        className="relative w-full h-[32rem] overflow-hidden cursor-pointer rounded-3xl flex flex-col px-6 py-8"
+        className="relative w-full h-100 overflow-hidden cursor-pointer flex flex-col px-6 py-8"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -22,9 +27,9 @@ const PlatformCard = ({ title, description, imageSrc, url }: PlatformCardProps) 
         {/* Gradient overlay */}
         <div
           className={`absolute inset-0 transition-all duration-300 ${
-            isHovered
-              ? "bg-gradient-to-br from-black/90 to-primaryGold/90"
-              : "bg-gradient-to-b from-transparent to-black/90"
+            isHovered ?
+              "bg-linear-to-br from-black/90 to-primaryGold/90"
+            : "bg-linear-to-b from-transparent to-black/90"
           }`}
         />
 
@@ -37,9 +42,7 @@ const PlatformCard = ({ title, description, imageSrc, url }: PlatformCardProps) 
           <h3 className="text-2xl font-bold mt-2 text-white uppercase tracking-tighter">
             {title}
           </h3>
-          <p className="text-white/70 text-xl">
-            {description}
-          </p>
+          <p className="text-white/70 text-xl">{description}</p>
         </div>
 
         {/* Hover Overlay Content */}
@@ -50,7 +53,7 @@ const PlatformCard = ({ title, description, imageSrc, url }: PlatformCardProps) 
         >
           {/* Circular Arrow SVG */}
           <svg
-            className={`w-32 h-32 mb-4 transition-transform duration-300 ${
+            className={`w-20 h-20 mb-4 transition-transform duration-300 ${
               isHovered ? "scale-100" : "scale-75"
             }`}
             fill="none"
@@ -68,13 +71,13 @@ const PlatformCard = ({ title, description, imageSrc, url }: PlatformCardProps) 
             />
           </svg>
 
-          <p className="text-white/70 text-2xl font-light uppercase tracking-tighter">
+          <p className="text-white/70 text-xl font-normal uppercase tracking-tighter">
             Visit Platform
           </p>
         </div>
       </div>
     </a>
-  )
+  );
 };
 
 export default PlatformCard;
