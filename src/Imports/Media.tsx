@@ -8,7 +8,7 @@ import MediaCard from "@/components/ui/MediaCard";
 
 const Media = () => {
   return (
-    <section id="media" className="w-full bg-amber-50 font-jost pt-6">
+    <section id="media-and-press" className="w-full bg-amber-50 font-jost pt-6">
       <Container>
         <div className="my-10">
           <div className="border-b border-black/10 pb-5">
@@ -28,10 +28,10 @@ const Media = () => {
           </div>
 
           <div 
-            className="w-full grid gap-4 my-12 
+            className="w-full grid gap-3 my-12 
               grid-cols-1 grid-rows-5
-              sm:h-[64rem] sm:grid-cols-2 sm:grid-rows-3
-              lg:h-[48rem] lg:grid-cols-10 lg:grid-rows-6"
+              sm:h-256 sm:grid-cols-2 sm:grid-rows-3
+              lg:h-192 lg:grid-cols-10 lg:grid-rows-6"
           >
             <div className="h-64 sm:h-auto sm:col-span-2 sm:row-span-1 lg:col-span-6 lg:row-span-4">
               <MediaCard 
