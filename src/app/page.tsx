@@ -3,6 +3,7 @@ import Credibility from "@/Imports/Credibility";
 import Hero from "@/Imports/Hero";
 import Platforms from "@/Imports/Platforms";
 import Events from "@/Imports/Events"
+import Media from "@/Imports/Media";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutMe />
       <Platforms />
       <Events />
+      <Media />
       {/* Add your Compoent Here */}
     </main>
   );
