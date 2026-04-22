@@ -28,8 +28,8 @@ const PlatformCard = ({
         <div
           className={`absolute inset-0 transition-all duration-300 ${
             isHovered ?
-              "bg-linear-to-br from-black/90 to-primaryGold/90"
-            : "bg-linear-to-b from-transparent to-black/90"
+              "bg-linear-to-br from-black/95 to-primaryGold/90"
+            : "bg-linear-to-b from-transparent to-black"
           }`}
         />
 

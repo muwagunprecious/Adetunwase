@@ -36,4 +36,11 @@ export const platformList: PlatformCardProps[] = [
     imageSrc: "/events/sample_platform.png",
     url: "#link-to-platform",
   },
+  {
+    id: "platform-06",
+    title: "Emmanuel Agida Portfolio",
+    description: "A portfolio of strategic platforms designed to execute vision at scale—each one structured to drive innovation.",
+    imageSrc: "/events/sample_platform.png",
+    url: "#link-to-platform",
+  },
 ]
