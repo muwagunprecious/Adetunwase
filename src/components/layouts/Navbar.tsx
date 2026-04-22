@@ -122,7 +122,6 @@ const Navbar = () => {
             title="get in touch"
             primaryText="GET IN TOUCH"
             hoverText="GET IN TOUCH"
-            title="get in touch"
             icon={CircleArrowOutUpRight}
             iconPosition="left"
             onClick={handleLinkClick}

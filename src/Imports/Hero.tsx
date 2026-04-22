@@ -63,7 +63,6 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
                   primaryText="KNOW MORE ABOUT ME"
                   hoverText="KNOW MORE ABOUT ME"
                   icon={UserStar}
-                  title="kow more about me"
                   iconPosition="left"
                   onClick={handleButtonClick}
                   className="gap-2 w-full sm:w-auto"
