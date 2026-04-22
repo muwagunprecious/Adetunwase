@@ -9,7 +9,7 @@ const MediaCard = ({ title, description, imageSrc, url }: MediaCardProps) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <div
-        className="relative w-full h-full overflow-hidden cursor-pointer flex flex-col px-4 py-6"
+        className="relative w-full h-full overflow-hidden cursor-pointer flex flex-col px-5 py-6"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -23,8 +23,8 @@ const MediaCard = ({ title, description, imageSrc, url }: MediaCardProps) => {
         <div
           className={`absolute inset-0 transition-all duration-300 ${
             isHovered
-              ? "bg-black/60"
-              : "bg-black/40"
+              ? "bg-black/80"
+              : "bg-black/60"
           }`}
         />
 
@@ -48,7 +48,7 @@ const MediaCard = ({ title, description, imageSrc, url }: MediaCardProps) => {
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         >
-          <p className="text-primaryGold text-lg tracking-tighter px-12 py-6 border-primaryGold border-2">
+          <p className="text-primaryGold text-md tracking-tighter px-10 py-4 border-primaryGold border-2">
             View Publication
           </p>
         </div>
