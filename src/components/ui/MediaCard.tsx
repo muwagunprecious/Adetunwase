@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { MediaCardProps } from "@/types/media";
 
-const MediaCard = ({ title, description, imageSrc, url }: MediaCardProps) => {
+const MediaCard = ({ title, description, imageSrc, url, style }: MediaCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a href={url} target="_blank" rel="noopener noreferrer" className={style}>
       <div
         className="relative w-full h-full overflow-hidden cursor-pointer flex flex-col px-5 py-6"
         onMouseEnter={() => setIsHovered(true)}

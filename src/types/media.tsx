@@ -3,4 +3,5 @@ export type MediaCardProps = {
   description: string;
   imageSrc: string;
   url: string;
+  style?: string;
 };
