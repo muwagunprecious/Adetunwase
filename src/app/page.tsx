@@ -4,6 +4,7 @@ import Hero from "@/Imports/Hero";
 import Platforms from "@/Imports/Platforms";
 import Events from "@/Imports/Events"
 import Media from "@/Imports/Media";
+import Contact from "@/Imports/Contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Platforms />
       <Events />
       <Media />
+      <Contact />
       {/* Add your Compoent Here */}
     </main>
   );
