@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
 
 
-            <form className="w-full sm:w-2/5 flex flex-col gap-4 text-lg">
+            <form className="w-full sm:w-2/5 flex flex-col gap-4 text-md sm:text-lg">
               <div className="relative w-full">
                 <input 
                   type="text" name="username" id="username" placeholder="@logicalsam"
