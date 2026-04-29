@@ -18,9 +18,11 @@ const SocialMediaLink = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex-1 flex items-end justify-center py-8 sm:py-14 gap-2 bg-white text-primaryBlack hover:bg-primaryGold transition-all duration-300"
+      className="group flex-1 flex items-end justify-center py-8 sm:py-14 gap-2 
+      bg-white text-primaryBlack hover:bg-primaryGold transition-all duration-300
+      border-x border-gray-100"
     >
-      <span className="hidden sm:block text-4xl tracking-tighter transition-all duration-300 group-hover:text-white">
+      <span className="hidden sm:block text-4xl tracking-tighter transition-all duration-300 group-hover:text-white font-poppins">
         {label}
       </span>
 
