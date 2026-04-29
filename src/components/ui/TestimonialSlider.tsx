@@ -25,7 +25,8 @@ const TestimonialSlider: React.FC<TestimonialsProps> = ({ testimonials, directio
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="flex flex-col items-center justify-center my-10 shrink-0 text-center text-lg"
+            className="flex flex-col items-center justify-center my-4 p-6 shrink-0 text-center text-lg"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.01)" }}
           >
             <p className="text-primaryBlack/80 font-light">{testimonial.quote}</p>
             <div className="flex flex-row items-center justify-center">
