@@ -21,6 +21,7 @@ export default function Home() {
       <Events />
       <Media />
       <Contact />
+      <Testimonials/>
       <SocialLinks />
       {/* Add your Compoent Here */}
     </main>
