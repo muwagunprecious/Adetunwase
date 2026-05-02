@@ -6,6 +6,7 @@ import Events from "@/Imports/Events"
 import Media from "@/Imports/Media";
 import Contact from "@/Imports/Contact";
 import SocialLinks from "@/Imports/SocialLinks";
+import Testimonials from "@/Imports/Testimonials";
 
 export default function Home() {
   return (
