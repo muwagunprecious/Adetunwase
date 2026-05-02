@@ -26,7 +26,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${jost.variable} h-full antialiased`}
     >
-      <body className="flex flex-col" cz-shortcut-listen="true">
+      <body className="flex flex-col font-jost" cz-shortcut-listen="true">
         <Navbar />
         {children}
         <BackToTop />
