@@ -14,13 +14,19 @@ const Testimonials = () => {
           <div className="flex flex-col lg:items-end w-full lg:w-1/3">
             <Badge title="TESTIMONIALS" className="text-primaryBlack/20" />
             <div className="flex flex-col justify-between my-6 gap-4 lg:text-right">
-              <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full">
-                Trusted by Leaders. 
-                <span className="text-primaryGold italic"> Respected by Institutions</span>
+              <Heading
+                as="h3"
+                className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full"
+              >
+                Trusted by Leaders.
+                <span className="text-primaryGold italic">
+                  {" "}
+                  Respected by Institutions
+                </span>
               </Heading>
-              <div className="w-full text-primaryBlack/40 text-xl">
-                Endorsements from respected figures and organizations 
-                reflecting a consistent standard of excellence, integrity, and impact.
+              <div className="w-full text-primaryBlack/30 text-xl tracking-tighter">
+                Endorsements from respected figures and organizations reflecting
+                a consistent standard of excellence, integrity, and impact.
               </div>
             </div>
           </div>
@@ -30,7 +36,10 @@ const Testimonials = () => {
               <TestimonialSlider testimonials={testimonialList} />
             </div>
             <div className="hidden lg:block w-1/2 px-4">
-              <TestimonialSlider testimonials={testimonialList} direction="reverse" />
+              <TestimonialSlider
+                testimonials={testimonialList}
+                direction="reverse"
+              />
             </div>
           </div>
         </div>
