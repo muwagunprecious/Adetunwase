@@ -7,6 +7,7 @@ import Media from "@/Imports/Media";
 import Contact from "@/Imports/Contact";
 import SocialLinks from "@/Imports/SocialLinks";
 import Testimonials from "@/Imports/Testimonials";
+import CaseStudies from "@/Imports/CaseStudies";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutMe />
       <Platforms />
       <Events />
+      <CaseStudies />
       <Media />
       <Contact />
       <Testimonials/>
