@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+  /* custom colors */
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* cuustom fonts */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* custom colors */
+  --primarCyan: #56cad9;
+  --primaryHeader: #101828;
+  --primaryLinks: #64748b;
+  --primaryBadge: #f9f5ff;
+}
+
+@theme inline {
+  /* custom colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primaryCyan: var(--primaryCyan);
+  --color-primaryHeader: var(--primaryHeader);
+  --color-primaryLinks: var(--primaryLinks);
+  --color-primaryBadge: var(--primaryBadge);
+
+  /* fonts */
+  --font-poppins: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fdfdfd;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out forwards;
+}
+
+@layer utilities {
+  .animation-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Product Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Light.woff") format("woff");
+  font-weight: 300;
+  /* Light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Regular.woff") format("woff");
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Medium.woff") format("woff");
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Bold.woff") format("woff");
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("/fonts/ProductSans-Black.woff") format("woff");
+  font-weight: 900;
+  /* Black */
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-primaryFont {
+  font-family: "Product Sans";
+}
+
+/* SweetAlert2 icon size override */
+.swal2-icon {
+  font-size: 15px !important;
+}
+
+/* .swal2-mobile {
+  font-size: 20px !important;
+} */
+
+.swal2-title {
+  font-size: 25px !important;
+  letter-spacing: -0.04em !important;
+}
+
+.swal-bricolage,
+.swal-bricolage .swal2-title,
+.swal-bricolage .swal2-html-container,
+.swal-bricolage .swal2-confirm {
+  font-family: "Bricolage Grotesque", "Poppins", sans-serif !important;
+}

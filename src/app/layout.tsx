@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layouts/Navbar";
+import { headers } from "next/headers";
+import ClientComponent from "@/components/layouts/ClientComponents";
 import BackToTop from "@/components/ui/BackToTopButton";
 
 const jost = Jost({
@@ -10,26 +11,40 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Emmanuel Agida - Digital Strategist & Entrepreneur",
+  title: "Emmanuel Agida - Leader | Entreprenuer | Catalyst",
   description:
-    "Emmanuel Agida is a digital strategist, entrepreneur, and founder of Emmanuels Digital. With over Half a decade of experience, he has helped businesses grow through innovative digital strategies. Based in Lagos, Nigeria, Emmanuel is passionate about leveraging technology to drive business success and empower local communities.",
+    "Emmanuel Agida is a digital strategist, entrepreneur, and founder of Emmanuels Digital.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const headersList = await headers();
+  const host = headersList.get("host") || "";
+
+  const hostname = host.split(":")[0];
+
+  const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN || "localhost";
+
+  let subdomain: string | undefined;
+
+  if (hostname === "gwr.localhost" || hostname === `gwr.${rootDomain}`) {
+    subdomain = "gwr";
+  }
+
   return (
-    <html
-      lang="en"
-      data-scroll-behavior="smooth"
-      className={`${jost.variable} h-full antialiased`}
-    >
-      <body className="flex flex-col font-jost" cz-shortcut-listen="true">
-        <Navbar />
-        {children}
-        <BackToTop />
+    <html lang="en" className={`${jost.variable} antialiased`}>
+      <body
+        className="min-h-screen flex flex-col"
+        cz-shortcut-listen="true"
+      >
+        {/* pass subdomain correctly */}
+        <ClientComponent subdomain={subdomain}>
+          {children}
+          {subdomain !== "gwr" && <BackToTop />}
+        </ClientComponent>
       </body>
     </html>
   );
