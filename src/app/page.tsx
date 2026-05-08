@@ -9,6 +9,7 @@ import SocialLinks from "@/Imports/SocialLinks";
 import Testimonials from "@/Imports/Testimonials";
 import Footer from "@/Imports/Footer";
 import CaseStudies from "@/Imports/CaseStudies";
+import Leadership from "@/Imports/Leadership";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Events />
       <CaseStudies />
       <Media />
+      <Leadership />
       <Contact />
       <Testimonials/>
       <SocialLinks />
