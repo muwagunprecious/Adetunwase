@@ -4,11 +4,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const links = [
+const linksCol1 = [
   { label: "Home", href: "#" },
   { label: "About Me", href: "#about-me" },
   { label: "Platforms", href: "#platforms" },
   { label: "Events", href: "#events" },
+];
+
+const linksCol2 = [
   { label: "Case Studies", href: "#case-studies" },
   { label: "Media & Press", href: "#media-and-press" },
   { label: "Contact", href: "#contact" },
@@ -16,106 +19,114 @@ const links = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white font-light">
-      <div className="max-w-7xl mx-auto px-6 lg:py-16 py-10">
-        {/* Top branding */}
-        <div className="flex flex-col items-center gap-6 mb-16">
-          <Image
-            src="/footer_brand.svg"
-            alt="Brand"
-            width={100}
-            height={100}
-            draggable={false}
-            className="opacity-90 w-90"
-          />
-
-          <p className="text-white/60 text-center max-w-md">
-            Equipping Lives for Purpose, Leadership, and Impact.
-          </p>
-        </div>
-
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
-          <div className="space-y-6">
+    <footer className="w-full bg-[#0a0a0a] text-white font-light overflow-hidden">
+      <div className="w-full px-6 sm:px-10 lg:px-16 py-30 pb-0">
+        {/* ── Main row: logo+nav LEFT  |  heading RIGHT ── */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-6">
+          {/* LEFT col — logo + two-col nav */}
+          <div className="flex flex-col gap-10 lg:w-[35%] shrink-0">
             <Image
-              src="/emmanuelagida_logo.svg"
+              src="/emmanuelagida_brand_banner.svg"
               alt="Logo"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               draggable={false}
+              className="opacity-80 w-90 lg:w-60"
             />
-            <p className="text-white/60 leading-relaxed">
-              Building systems, platforms, and people for long-term impact.
-            </p>
-          </div>
 
-          {/* Links */}
-          <div className="space-y-3">
-            <h4 className="text-white/70 mb-4">Quick Links</h4>
-
-            {links.map(link => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="block text-white/60 hover:underline hover:text-white transition-all duration-300 hover:translate-x-2"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          {/* Support */}
-          <div className="space-y-4">
-            <h4 className="text-white/70 mb-4">Support</h4>
-
-            <div className="text-white/60 space-y-1">
-              <p>Reach me directly</p>
-              <Link
-                href="tel:1235678901"
-                className="hover:text-white hover:underline transition hover:translate-x-2 inline-block duration-300"
-              >
-                1235678901
-              </Link>
-            </div>
-
-            <div className="text-white/60 space-y-1">
-              <p>Need support?</p>
-              <Link
-                href="mailto:help@emmanuelagida.com"
-                className="hover:text-white hover:underline transition hover:translate-x-2 inline-block duration-300"
-              >
-                help@emmanuelagida.com
-              </Link>
+            <div className="flex flex-row gap-10">
+              <div className="flex flex-col gap-3">
+                {linksCol1.map(link => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="text-white/40 text-xs uppercase hover:text-white/80 transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+              
+              <div className="flex flex-col gap-3">
+                {linksCol2.map(link => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="text-white/40 text-xs hover:text-white/80 uppercase transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h4 className="text-white/70 mb-4">Stay in the Loop</h4>
-
-            <p className="text-white/60">
-              Get insights, updates, and project drops directly in your inbox.
-            </p>
-
-            <div className="mt-4 border border-white/20 rounded-lg p-3 text-white/40 text-sm">
-              Coming soon...
-            </div>
+          {/* RIGHT col — ghost display heading flush to right edge */}
+          <div className="lg:w-[65%] flex items-start justify-start lg:justify-end lg:-mb-4 lg:-mr-16">
+            <h2
+              className="font-black tracking-tighter uppercase leading-[0.88] text-white/10 select-none lg:text-right text-left whitespace-nowrap"
+              style={{ fontSize: "clamp(52px, 10.5vw, 140px)" }}
+            >
+              Let&apos;s Build
+              <br />
+              The Future.
+            </h2>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-white/10 mt-16 pt-8 text-center text-white/50 text-sm">
-          © {new Date().getFullYear()} Emmanuel Agida. All Rights Reserved.
-          Built by{" "}
-          <Link
-            href="https://samfolio-nine.vercel.app"
-            target="_blank"
-            className="hover:text-white transition duration-300"
-          >
-            Logical Sam
-          </Link>
-          .
+        {/* ── Contact columns ── */}
+        <div className="flex flex-col sm:flex-row justify-between gap-8 sm:gap-4 border-t border-white/5 mt-14 py-12">
+          <div>
+            <p className="text-white/25 text-[10px] uppercase tracking-[0.18em] mb-2">
+              Direct Line
+            </p>
+            <Link
+              href="tel:1235678901"
+              className="text-white/50 text-sm hover:text-white transition-colors duration-300"
+            >
+              1235678901
+            </Link>
+          </div>
+
+          <div>
+            <p className="text-white/25 text-[10px] uppercase tracking-[0.18em] mb-2">
+              Email Support
+            </p>
+            <Link
+              href="mailto:help@emmanuelagida.com"
+              className="text-white/50 text-sm hover:text-white transition-colors duration-300 break-all"
+            >
+              help@emmanuelagida.com
+            </Link>
+          </div>
+
+          <div>
+            <p className="text-white/25 text-[10px] uppercase tracking-[0.18em] mb-2">
+              Mission
+            </p>
+            <p className="text-white/65 cursor-pointer hover:-translate-y-2 transition-all duration-300 text-xs uppercase leading-relaxed">
+              Equipping Lives for Purpose,
+              <br />
+              Leadership, and Impact.
+            </p>
+          </div>
+        </div>
+
+        {/* ── Bottom bar ── */}
+        <div className="border-t border-white/5 py-6 flex flex-row items-center justify-between gap-3">
+          <p className="text-white/25 text-xs">
+            © {new Date().getFullYear()} Emmanuel Agida. All Rights Reserved.
+          </p>
+          <p className="text-white/25 text-xs">
+            Built by{" "}
+            <Link
+              href="https://samfolio-nine.vercel.app"
+              target="_blank"
+              className="hover:text-white/60 hover:underline cursor-pointer transition-colors duration-300"
+            >
+              Logical Sam
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

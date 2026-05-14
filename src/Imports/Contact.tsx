@@ -2,36 +2,74 @@
 
 import Container from "@/components/layouts/Container";
 import Badge from "@/components/ui/Badge";
-import Heading from "@/components/ui/Heading";
 import ContactInfoItem from "@/components/ui/ContactInfoItem";
 import { contactInfoData } from "@/constants/contactInfo";
-import { Mail, MessageSquareMore, UserRound } from "lucide-react";
+import { Mail, MessageSquareMore, UserRound, ArrowUpRight } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-full bg-primaryBlack font-jost pt-5">
+    <section
+      id="contact"
+      className="w-full font-jost py-20"
+      style={{
+        backgroundColor: "#080808",
+        backgroundImage: `
+          linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)
+        `,
+        backgroundSize: "48px 48px",
+      }}
+    >
       <Container>
-        <div className="mt-10 mb-20">
-          <div className="border-b border-white/10 pb-5">
-            <Badge title="CONTACT" />
-          </div>
+        <div className="border-b border-white/10 pb-5 mb-12">
+          <Badge title="CONTACT" />
+        </div>
 
-          <div className="flex flex-col lg:flex-row justify-between my-6 gap-4">
-            <Heading
-              as="h3"
-              className="lg:text-4xl font-bold text-white tracking-tighter w-full lg:w-1/3"
-            >
-              Let&apos;s build
-              <span className="text-primaryGold"> The future together.</span>
-            </Heading>
-            <div className="w-full lg:w-2/5 text-white/50 text-lg">
-              Partner, collaborate, or engage to drive meaningful impact and
-              create lasting value across sectors and communities.
+        {/* Two-panel card */}
+        <div className="flex flex-col lg:flex-row rounded-3xl overflow-hidden min-h-150">
+          {/* LEFT — branded panel */}
+          <div
+            className="flex flex-col justify-between px-4 p-8 lg:p-12 lg:w-[45%] w-full"
+            style={{
+              background:
+                "linear-gradient(160deg, #1a1200 0%, #2a1d00 40%, #1a1200 100%)",
+            }}
+          >
+            {/* Top: logo area */}
+            <div className="flex items-center gap-3">
+              <div
+                className="w-8 h-8 flex items-center justify-center rounded-md"
+                style={{
+                  background: "rgba(var(--primaryGold-rgb, 180,140,60),0.15)",
+                }}
+              >
+                <ArrowUpRight size={18} className="text-primaryGold" />
+              </div>
+              <span className="text-white font-semibold text-sm tracking-wide">
+                Emmanuel Agida
+              </span>
             </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-8 items-stretch">
-            <div className="flex-1 flex flex-col items-start justify-center p-6 gap-6 bg-white/5 border-l-4 border-primaryGold">
+            {/* Middle: heading + description */}
+            <div className="flex flex-col gap-6 my-8">
+              <h2 className="text-white text-2xl lg:text-5xl font-bold tracking-tighter uppercase leading-tighter">
+                Let&apos;s build{" "}
+                <span className="text-primaryGold">the future</span> together.
+              </h2>
+              <p className="text-white/50 text-base leading-tight max-w-sm font-light">
+                Partner, collaborate, or engage to drive meaningful impact and
+                create lasting value across sectors and communities.
+              </p>
+            </div>
+
+            {/* Bottom: contact info items */}
+            <div
+              className="rounded-2xl p-4 lg:p-6 flex flex-col gap-5"
+              style={{
+                background: "rgba(255,255,255,0.04)",
+                border: "1px solid rgba(255,255,255,0.07)",
+              }}
+            >
               {contactInfoData.map(contactInfo => (
                 <ContactInfoItem
                   key={contactInfo.id}
@@ -43,59 +81,107 @@ const Contact = () => {
                 />
               ))}
             </div>
+          </div>
 
-            <form className="w-full sm:w-2/5 flex flex-col gap-4 text-md sm:text-lg">
-              <div className="relative w-full">
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  placeholder="@logicalsam"
-                  className="w-full px-4 py-3 pr-12 border-2 border-white/10 outline-none focus:ring-2 focus:ring-primaryGold"
-                />
-                <UserRound className="absolute text-white/20  right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+          {/* RIGHT — dark form panel */}
+          <div
+            className="flex flex-col lg:w-[55%] w-full"
+            style={{ background: "#111111" }}
+          >
+            {/* Tab-style top bar */}
+            <div className="px-10 pt-8 pb-6 border-b border-white/8">
+              <div
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-white/60"
+                style={{ background: "rgba(255,255,255,0.06)" }}
+              >
+                <Mail size={15} className="text-white/40" />
+                Contact via email
+              </div>
+            </div>
+
+            {/* Form */}
+            <form className="flex flex-col gap-6 lg:gap-10 p-10 px-6 flex-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {/* Name */}
+                <div className="flex flex-col gap-1.5">
+                  <label
+                    htmlFor="username"
+                    className="text-xs font-medium text-white/30 uppercase tracking-widest"
+                  >
+                    Your name
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      placeholder="Enter your full name"
+                      className="w-full px-4 py-3 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200"
+                    />
+                    <UserRound
+                      size={15}
+                      className="absolute right-3.5 top-1/2 -translate-y-1/2 text-white/20 pointer-events-none"
+                    />
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex flex-col gap-1.5">
+                  <label
+                    htmlFor="email"
+                    className="text-xs font-medium text-white/30 uppercase tracking-widest"
+                  >
+                    Email
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="you@email.com"
+                      className="w-full px-4 py-3 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200"
+                    />
+                    <Mail
+                      size={15}
+                      className="absolute right-3.5 top-1/2 -translate-y-1/2 text-white/20 pointer-events-none"
+                    />
+                  </div>
+                </div>
               </div>
 
-              <div className="relative w-full">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="you@email.com"
-                  className="w-full px-4 py-3 pr-12 border-2 border-white/10 outline-none focus:ring-2 focus:ring-primaryGold"
-                />
-                <Mail
-                  size={20}
-                  className="absolute text-white/20 right-4 top-1/2 -translate-y-1/2 pointer-events-none"
-                />
+              {/* Message */}
+              <div className="flex flex-col gap-1.5 flex-1">
+                <label
+                  htmlFor="message"
+                  className="text-xs font-medium text-white/30 uppercase tracking-widest"
+                >
+                  How can I help?
+                </label>
+                <div className="relative flex-1">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Tell me a little about your project..."
+                    rows={7}
+                    className="w-full h-full min-h-40 px-4 py-4 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200 resize-none"
+                  />
+                  <MessageSquareMore
+                    size={15}
+                    className="absolute right-3.5 top-4 text-white/20 pointer-events-none"
+                  />
+                </div>
               </div>
 
-              <div className="relative w-full">
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Your message*"
-                  rows={6}
-                  className="w-full px-4 py-6 pr-12 border-2 border-white/10 outline-none focus:ring-2 focus:ring-primaryGold"
-                />
-                <MessageSquareMore className="absolute text-white/20 right-4 top-6 pointer-events-none" />
-              </div>
-
+              {/* Submit */}
               <button
                 type="submit"
-                className="w-full flex flex-row items-center justify-center gap-2 py-4 mt-2 bg-primaryGold cursor-pointer hover:opacity-70"
+                className="group w-full flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-primaryGold text-white text-sm font-medium cursor-pointer transition-all duration-300 hover:opacity-90 mt-2"
               >
-                Send me a Message
-                <svg viewBox="0 0 100 100" className="w-6 h-6">
-                  <path
-                    d="M20 80 L80 20 L45 20 M80 20 L80 55"
-                    fill="none"
-                    className="stroke-white"
-                    strokeWidth="10"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <span className="uppercase">Send message</span>
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
               </button>
             </form>
           </div>

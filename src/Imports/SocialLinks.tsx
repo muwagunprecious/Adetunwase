@@ -1,13 +1,12 @@
 "use client";
 
-import React from "react";
 import { FaFacebook, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import SocialMediaLink from "@/components/ui/SocialMediaLink";
 
 const SocialLinks = () => {
   return (
-    <div className="w-full flex font-jost flex-row items-center bg-white">
+    <div className="w-full flex font-jost flex-row items-center bg-gray-50">
       <SocialMediaLink
         href="https://www.facebook.com/"
         icon={FaFacebook}

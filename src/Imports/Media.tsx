@@ -21,7 +21,7 @@ const Media = () => {
               Recognized. Featured. 
               <span className="text-primaryGold"> Trusted.</span>
             </Heading>
-            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-lg">
+            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md font-normal">
               Featured across leading platforms and media outlets, 
               highlighting thought leadership, strategic insights, 
               and impactful contributions to key sectors.
@@ -29,7 +29,7 @@ const Media = () => {
           </div>
 
           <div 
-            className="w-full grid gap-3 my-12 
+            className="w-full grid gap-2 my-12 
               grid-cols-1 grid-rows-5
               sm:h-256 sm:grid-cols-2 sm:grid-rows-3
               lg:h-192 lg:grid-cols-10 lg:grid-rows-6"

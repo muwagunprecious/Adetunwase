@@ -34,10 +34,10 @@ const MediaCard = ({ title, description, imageSrc, url, style }: MediaCardProps)
             isHovered ? "opacity-0" : "opacity-100"
           }`}
         >
-          <h3 className="text-2xl font-semibold mt-2 text-white/80">
+          <h3 className="text-2xl tracking-tight leading-snug font-semibold mt-2 text-white/80">
             {title}
           </h3>
-          <p className="text-white/70 text-lg leading-tight">
+          <p className="text-white/70 text-md leading-tight font-light">
             {description}
           </p>
         </div>

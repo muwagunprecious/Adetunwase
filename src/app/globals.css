@@ -87,7 +87,7 @@ body {
 }
 
 .animate-logo-slide {
-  animation: logo-slide 30s linear infinite;
+  animation: logo-slide 120s linear infinite;
 }
 
 .animate-logo-slide:hover {
@@ -104,7 +104,7 @@ body {
 }
 
 .animate-vertical-slide {
-  animation: vertical-slide 30s linear infinite;
+  animation: vertical-slide 120s linear infinite;
 }
 
 .animate-vertical-slide:hover {
