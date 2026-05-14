@@ -15,10 +15,10 @@ const TestimonialSlider: React.FC<TestimonialsProps> = ({
   return (
     <section className="w-full overflow-hidden relative h-160">
       {/* Top fade overlay */}
-      <div className="absolute top-0 left-0 w-full h-48 z-10 pointer-events-none bg-linear-to-b from-amber-50 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-48 z-10 pointer-events-none bg-linear-to-b from-gray-50 to-transparent" />
 
       {/* Bottom fade overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-48 z-10 pointer-events-none bg-linear-to-t from-amber-50 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-48 z-10 pointer-events-none bg-linear-to-t from-gray-50 to-transparent" />
 
       {/* Sliding track */}
       <div

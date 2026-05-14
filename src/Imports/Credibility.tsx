@@ -12,7 +12,7 @@ const StatCard = ({ stat }: { stat: StatItem }) => {
   const rest = words.slice(1).join(" ");
 
   return (
-    <div className="group font-jost relative flex flex-col justify-end p-6 sm:p-8 bg-[#111111] overflow-hidden cursor-default transition-all hover:-translate-y-2 duration-300 border-t-8 border-t-transparent hover:border-t-primaryGold min-h-60 sm:min-h-100">
+    <div className="group font-jost relative flex flex-col justify-end p-6 sm:p-8 bg-[#111111] overflow-hidden cursor-default transition-all hover:-translate-y-2 duration-300 border-t-8 border-t-transparent hover:border-t-primaryGold min-h-60 sm:min-h-80">
       {/* Gold gradient overlay on hover */}
       <div
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
@@ -32,10 +32,10 @@ const StatCard = ({ stat }: { stat: StatItem }) => {
 
       {/* Stat number + label */}
       <div className="relative z-10">
-        <p className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+        <p className="text-3xl sm:text-3xl font-bold text-white leading-tight uppercase">
           <span className="text-primaryGold">{stat.number}</span> {firstWord}
         </p>
-        <p className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+        <p className="text-3xl sm:text-3xl font-bold text-white leading-tight uppercase">
           {rest}
         </p>
       </div>
@@ -60,7 +60,7 @@ const Credibility = () => {
               <span className="text-primaryGold">leadership journey.</span>
             </Heading>
 
-            <Paragraph className="mb-10 sm:px-0 lg:w-3/5">
+            <Paragraph className="mb-10 sm:px-0 lg:w-3/5 text-md">
               Half a decade of strategic leadership marked by measurable
               outcomes, cross-sector influence, and a consistent track record of
               delivering results at scale.

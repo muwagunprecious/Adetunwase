@@ -12,13 +12,18 @@ const PhotoSlider: React.FC<EngagementsProps> = ({
   engagements,
   direction = "normal",
 }) => {
-  const doubled = [...engagements, ...engagements];
+  const doubled = [
+    ...engagements,
+    ...engagements,
+    ...engagements,
+    ...engagements,
+  ];
 
   return (
     <section className="w-full overflow-hidden relative h-64">
       {/* Sliding track */}
       <div
-        className="flex flex-row gap-4 w-max animate-logo-slide"
+        className="flex flex-row gap-2 w-max animate-logo-slide"
         style={{ animationDirection: direction }}
       >
         {doubled.map((engagement, index) => (

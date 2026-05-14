@@ -11,9 +11,9 @@ import { caseStudies } from "@/constants/caseStudies";
 
 const CaseStudies = () => {
   return (
-    <section id="case-studies" className="w-full bg-amber-50 font-jost pt-6">
+    <section id="case-studies" className="w-full bg-amber-50 font-jost">
       <Container>
-        <div className="my-10">
+        <div className="my-8">
           <div className="border-b border-black/10 pb-5">
             <Badge title="CASE STUDIES" className="text-primaryBlack/20" />
           </div>
@@ -22,13 +22,13 @@ const CaseStudies = () => {
             <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-2/5">
               Case studies in <span className="text-primaryGold"> Leadership and Impact</span>
             </Heading>
-            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-xl">
+            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md tracking-tight font-normal">
               An in-depth look at selected initiatives—highlighting the challenges addressed, 
               strategies implemented, and measurable outcomes achieved through focused leadership and execution.
             </div>
           </div>
 
-          <div className="grid grid-cols-12 lg:grid-rows-2 gap-4 my-10">
+          <div className="grid grid-cols-12 lg:grid-rows-2 gap-2 my-10">
             {caseStudies.map((caseStudy) => (
               <CaseStudyCard
                 key={caseStudy.id}

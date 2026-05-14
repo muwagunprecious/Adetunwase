@@ -20,14 +20,14 @@ const Platforms = () => {
               Driving a future built on <br />
               <span className="text-primaryGold italic">Innovation and impact.</span>
             </Heading>
-            <div className="w-full lg:w-2/5 text-white/40 text-lg">
+            <div className="w-full lg:w-2/5 text-white/40 text-md font-light">
               A portfolio of strategic platforms designed to execute 
               vision at scale—each one structured to drive innovation, 
               empower communities, and deliver measurable outcomes across key sectors.
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-12">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 my-12">
             {platformList.map((platform) => (
               <PlatformCard
                 key={platform.id}

@@ -6,16 +6,28 @@ import Image from "next/image";
 
 const ContactInfoItem = ({ itemValue, itemName, iconSrc, url = "" } : ContactInfoProps) => {
   return (
-    <div className="flex flex-row items-center gap-6">
-      <span className="rounded-full p-2 sm:p-6 bg-primaryGold w-12 h-12 sm:w-18 sm:h-18 flex items-center justify-center">
-        <Image src={iconSrc} alt="" width={10} height={10} className="w-4 sm:w-8" />
+    <div className="flex flex-row items-center gap-3 lg:gap-6">
+      <span className="rounded-full bg-primaryGold size-8 sm:size-12 flex items-center justify-center shrink-0">
+        <Image
+          src={iconSrc}
+          alt=""
+          width={20}
+          height={20}
+          className="w-3 h-3 sm:w-5 sm:h-5"
+        />
       </span>
       <div>
-        <h2 className="text-xl sm:text-3xl">{itemName}</h2>
-        <a className="text-sm sm:text-lg opacity-70 font-light underline hover:opacity-100" href={url} target="_blank">{itemValue}</a>
+        <h2 className="text-md sm:text-lg uppercase">{itemName}</h2>
+        <a
+          className="text-sm sm:text-md transition-all duration-300 hover:translate-x-2 opacity-70 font-light underline hover:opacity-100"
+          href={url}
+          target="_blank"
+        >
+          {itemValue}
+        </a>
       </div>
     </div>
-  )
+  );
 }
 
 export default ContactInfoItem

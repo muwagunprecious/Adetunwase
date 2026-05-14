@@ -14,7 +14,7 @@ const PlatformCard = ({
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <div
-        className="relative w-full h-100 overflow-hidden cursor-pointer flex flex-col px-6 py-8"
+        className="relative w-full h-80 overflow-hidden cursor-pointer flex flex-col px-4 py-12"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -39,10 +39,10 @@ const PlatformCard = ({
             isHovered ? "opacity-0" : "opacity-100"
           }`}
         >
-          <h3 className="text-2xl font-bold mt-2 text-white uppercase tracking-tighter">
+          <h3 className="text-lg font-bold mt-2 text-white uppercase tracking-tighter">
             {title}
           </h3>
-          <p className="text-white/70 text-xl">{description}</p>
+          <p className="text-white/70 text-md font-light leading-tight">{description}</p>
         </div>
 
         {/* Hover Overlay Content */}

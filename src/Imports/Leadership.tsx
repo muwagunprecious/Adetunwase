@@ -13,20 +13,26 @@ const Leadership = () => {
       <Container>
         <div className="my-10">
           <div className="border-b border-black/10 pb-5">
-            <Badge title="STRATEGIC ENGAGEMENTS" className="text-primaryBlack/20" />
+            <Badge
+              title="STRATEGIC ENGAGEMENTS"
+              className="text-primaryBlack/20"
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-between my-6 gap-4">
-            <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3">
+            <Heading
+              as="h3"
+              className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3"
+            >
               Leadership in Action.
             </Heading>
-            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-lg sm:text-xl">
-              A curated glimpse into key moments—engaging with communities, 
+            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md font-normal">
+              A curated glimpse into key moments—engaging with communities,
               leading initiatives, and shaping conversations that matter.
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 mt-8 sm:mt-12 mb-16">
+          <div className="flex flex-col gap-2 mt-8 sm:mt-12 mb-16">
             <PhotoSlider engagements={engagements} />
             <PhotoSlider engagements={engagements} direction="reverse" />
             <PhotoSlider engagements={engagements} />
@@ -34,7 +40,7 @@ const Leadership = () => {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default Leadership
+export default Leadership;

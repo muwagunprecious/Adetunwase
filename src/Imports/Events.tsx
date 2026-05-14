@@ -10,9 +10,9 @@ import { eventList } from "@/constants/events";
 
 const Events = () => {
   return (
-    <section id="events" className="w-full bg-amber-50 font-jost pt-6">
+    <section id="events" className="w-full bg-amber-50 font-jost">
       <Container>
-        <div className="my-10">
+        <div className="my-8">
           <div className="border-b border-black/10 pb-5">
             <Badge title="EVENTS" className="text-primaryBlack/20" />
           </div>
@@ -21,14 +21,14 @@ const Events = () => {
             <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3">
               Events That Inspire and Mobilize
             </Heading>
-            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-lg">
+            <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md tracking-tight leading-tight">
               A curated portfolio of impactful events—from conferences and summits 
               to community engagements—designed to spark conversations, drive collaboration, 
               and translate vision into collective action.
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 my-12 items-stretch">
             {eventList.map((event) => (
               <EventCard
                 key={event.id}
