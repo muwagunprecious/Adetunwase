@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
       />
       <Container>
         {/* Hero Content */}
-        <div className="relative z-20 my-20 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
+        <div className="relative z-20 mt-36 mb-20 text-center text-white sm:my-20 md:mt-40 md:mb-20 md:text-left lg:max-w-8xl max-w-4xl">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-primaryGold">
             Adetunwase Adenle
           </p>

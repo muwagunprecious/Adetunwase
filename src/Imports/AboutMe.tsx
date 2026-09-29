@@ -159,6 +159,7 @@ const AboutMe = () => {
                 className="w-full h-full grayscale object-cover object-top"
                 width={400}
                 height={400}
+                unoptimized
                 priority
                 draggable={false}
               />
@@ -172,6 +173,7 @@ const AboutMe = () => {
                 className="w-full min-h-70 grayscale object-cover object-top"
                 width={400}
                 height={400}
+                unoptimized
                 priority
                 draggable={false}
               />
