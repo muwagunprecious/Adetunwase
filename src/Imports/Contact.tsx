@@ -45,8 +45,8 @@ const Contact = () => {
               >
                 <ArrowUpRight size={18} className="text-primaryGold" />
               </div>
-              <span className="text-white font-semibold text-sm tracking-wide">
-                Emmanuel Agida
+                <span className="text-white font-semibold text-sm tracking-wide">
+                  Adetunwase Adenle
               </span>
             </div>
 
@@ -57,8 +57,8 @@ const Contact = () => {
                 <span className="text-primaryGold">the future</span> together.
               </h2>
               <p className="text-white/50 text-base leading-tight max-w-sm font-light">
-                Partner, collaborate, or engage to drive meaningful impact and
-                create lasting value across sectors and communities.
+                Interested in supporting creative education, community art, or
+                circular economy projects? Get in touch to start a conversation.
               </p>
             </div>
 
@@ -95,12 +95,17 @@ const Contact = () => {
                 style={{ background: "rgba(255,255,255,0.06)" }}
               >
                 <Mail size={15} className="text-white/40" />
-                Contact via email
+                Send an email
               </div>
             </div>
 
             {/* Form */}
-            <form className="flex flex-col gap-6 lg:gap-10 p-10 px-6 flex-1">
+            <form
+              action="mailto:adetunwase@slumart.org"
+              method="get"
+              encType="text/plain"
+              className="flex flex-col gap-6 lg:gap-10 p-10 px-6 flex-1"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Name */}
                 <div className="flex flex-col gap-1.5">
@@ -116,6 +121,7 @@ const Contact = () => {
                       name="username"
                       id="username"
                       placeholder="Enter your full name"
+                      required
                       className="w-full px-4 py-3 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200"
                     />
                     <UserRound
@@ -139,6 +145,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="you@email.com"
+                      required
                       className="w-full px-4 py-3 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200"
                     />
                     <Mail
@@ -162,6 +169,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     placeholder="Tell me a little about your project..."
+                    required
                     rows={7}
                     className="w-full h-full min-h-40 px-4 py-4 pr-10 text-sm text-white placeholder:text-white/20 bg-white/5 border border-white/10 rounded-xl outline-none focus:border-primaryGold transition-colors duration-200 resize-none"
                   />

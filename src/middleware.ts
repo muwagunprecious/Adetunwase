@@ -9,7 +9,7 @@ export function middleware(req: NextRequest) {
     const hostname = host.split(":")[0];
 
     const isRegistrationDomain = [
-        "gwr.emmanuelagida.com",
+        "gwr.adetunwase.com",
         "gwr.localhost",
     ].includes(hostname);
 

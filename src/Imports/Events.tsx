@@ -14,17 +14,16 @@ const Events = () => {
       <Container>
         <div className="my-8">
           <div className="border-b border-black/10 pb-5">
-            <Badge title="EVENTS" className="text-primaryBlack/20" />
+            <Badge title="PROJECTS & EVENTS" className="text-primaryBlack/20" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-between my-6 gap-4">
             <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3">
-              Events That Inspire and Mobilize
+              Creative work that brings communities together
             </Heading>
             <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md tracking-tight leading-tight">
-              A curated portfolio of impactful events—from conferences and summits 
-              to community engagements—designed to spark conversations, drive collaboration, 
-              and translate vision into collective action.
+              Exhibitions, learning programmes, and community projects that use
+              creativity to connect people and open opportunities.
             </div>
           </div>
 

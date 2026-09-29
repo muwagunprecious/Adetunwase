@@ -12,15 +12,10 @@ const PhotoSlider: React.FC<EngagementsProps> = ({
   engagements,
   direction = "normal",
 }) => {
-  const doubled = [
-    ...engagements,
-    ...engagements,
-    ...engagements,
-    ...engagements,
-  ];
+  const doubled = [...engagements, ...engagements];
 
   return (
-    <section className="w-full overflow-hidden relative h-64">
+    <section className="w-full overflow-hidden relative h-64" aria-label="Slum Art children’s workshop photos">
       {/* Sliding track */}
       <div
         className="flex flex-row gap-2 w-max animate-logo-slide"

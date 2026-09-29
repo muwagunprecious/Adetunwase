@@ -17,13 +17,12 @@ const Platforms = () => {
 
           <div className="flex flex-col lg:flex-row justify-between my-6 gap-4">
             <Heading as="h3" className="lg:text-4xl font-bold text-white/70 tracking-tighter w-full lg:w-1/2">
-              Driving a future built on <br />
-              <span className="text-primaryGold italic">Innovation and impact.</span>
+              Building a future through <br />
+              <span className="text-primaryGold italic">creativity and opportunity.</span>
             </Heading>
             <div className="w-full lg:w-2/5 text-white/40 text-md font-light">
-              A portfolio of strategic platforms designed to execute 
-              vision at scale—each one structured to drive innovation, 
-              empower communities, and deliver measurable outcomes across key sectors.
+              A set of creative, educational, and environmental initiatives that
+              support young people and build practical community opportunities.
             </div>
           </div>
 

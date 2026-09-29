@@ -18,13 +18,12 @@ const Media = () => {
 
           <div className="flex flex-col lg:flex-row justify-between my-6 gap-4">
             <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3">
-              Recognized. Featured. 
-              <span className="text-primaryGold"> Trusted.</span>
+              Art, learning, and{" "}
+              <span className="text-primaryGold">community stories.</span>
             </Heading>
             <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md font-normal">
-              Featured across leading platforms and media outlets, 
-              highlighting thought leadership, strategic insights, 
-              and impactful contributions to key sectors.
+              Selected reporting on Slum Art Foundation, children's creative
+              education, and environmental innovation.
             </div>
           </div>
 

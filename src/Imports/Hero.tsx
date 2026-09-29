@@ -6,8 +6,6 @@ import Button from "@/components/ui/Button";
 import { UserStar } from "lucide-react";
 import Paragraph from "@/components/ui/Paragraph";
 import Container from "@/components/layouts/Container";
-import Image from "next/image";
-import LogoSlider from "@/components/ui/LogoSlider";
 
 interface HeroProps {
   title: string;
@@ -27,21 +25,28 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
   return (
     <section
       id="/"
-      style={{ backgroundImage: "url('/hero_bg.svg')" }}
-      className="w-full h-full relative bg-cover bg-center bg-no-repeat"
+      className="w-full min-h-[640px] relative overflow-hidden bg-black"
     >
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-no-repeat grayscale"
+        style={{
+          backgroundImage:
+            "url('https://www.gocycle.ng/images/adetunwase-adenle.jpg')",
+          backgroundSize: "auto 100%",
+          backgroundPosition: "right center",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/10"
+      />
       <Container>
         {/* Hero Content */}
         <div className="relative z-20 my-20 text-center md:text-left text-white lg:max-w-8xl max-w-4xl md:mt-40">
-          <Image
-            src="/hero_logo.svg"
-            alt="Hero Logo"
-            priority
-            width={40}
-            height={40}
-            draggable={false}
-            className="w-3xl mb-5"
-          />
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-primaryGold">
+            Adetunwase Adenle
+          </p>
 
           <Heading
             as="h1"
@@ -74,9 +79,6 @@ const Hero: React.FC<HeroProps> = ({ title, description, button }) => {
           </div>
         </div>
       </Container>
-
-      {/* Logo Slider */}
-      <LogoSlider />
     </section>
   );
 };

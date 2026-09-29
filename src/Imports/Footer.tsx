@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const linksCol1 = [
@@ -25,14 +24,9 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-6">
           {/* LEFT col — logo + two-col nav */}
           <div className="flex flex-col gap-10 lg:w-[35%] shrink-0">
-            <Image
-              src="/emmanuelagida_brand_banner.svg"
-              alt="Logo"
-              width={100}
-              height={100}
-              draggable={false}
-              className="opacity-80 w-90 lg:w-60"
-            />
+            <Link href="/" className="text-3xl font-bold tracking-tight">
+              Adetunwase Adenle
+            </Link>
 
             <div className="flex flex-row gap-10">
               <div className="flex flex-col gap-3">
@@ -81,10 +75,10 @@ const Footer: React.FC = () => {
               Direct Line
             </p>
             <Link
-              href="tel:1235678901"
+              href="https://slumart.org/"
               className="text-white/50 text-sm hover:text-white transition-colors duration-300"
             >
-              1235678901
+              Slum Art Foundation
             </Link>
           </div>
 
@@ -93,10 +87,10 @@ const Footer: React.FC = () => {
               Email Support
             </p>
             <Link
-              href="mailto:help@emmanuelagida.com"
+              href="mailto:adetunwase@slumart.org"
               className="text-white/50 text-sm hover:text-white transition-colors duration-300 break-all"
             >
-              help@emmanuelagida.com
+              adetunwase@slumart.org
             </Link>
           </div>
 
@@ -105,9 +99,10 @@ const Footer: React.FC = () => {
               Mission
             </p>
             <p className="text-white/65 cursor-pointer hover:-translate-y-2 transition-all duration-300 text-xs uppercase leading-relaxed">
-              Equipping Lives for Purpose,
+              Building futures through art,
+              Creativity, Learning,
               <br />
-              Leadership, and Impact.
+              Opportunity.
             </p>
           </div>
         </div>
@@ -115,17 +110,7 @@ const Footer: React.FC = () => {
         {/* ── Bottom bar ── */}
         <div className="border-t border-white/5 py-6 flex flex-row items-center justify-between gap-3">
           <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} Emmanuel Agida. All Rights Reserved.
-          </p>
-          <p className="text-white/25 text-xs">
-            Built by{" "}
-            <Link
-              href="https://samfolio-nine.vercel.app"
-              target="_blank"
-              className="hover:text-white/60 hover:underline cursor-pointer transition-colors duration-300"
-            >
-              Logical Sam
-            </Link>
+            © {new Date().getFullYear()} Adetunwase Adenle. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -6,26 +6,24 @@ import Heading from "@/components/ui/Heading";
 import Image from "next/image";
 
 const TYPING_WORDS = [
-  "System.",
-  "Leader.",
-  "Visionary.",
-  "Reformer.",
-  "Builder.",
-  "Voice.",
+  "Artist.",
+  "Educator.",
+  "Innovator.",
+  "Social Entrepreneur.",
+  "Change-maker.",
 ];
 
 const PREVIEW_PARAGRAPHS = [
-  `Emmanuel Agida is a Nigerian entrepreneur, faith leader, and governance reformer whose work spans capacity development, institutional strengthening, business innovation, and socio-economic transformation across Africa and the global stage.`,
-  `He is the Founder and President of Emmanuel Agida International (EAI), a leadership and corporate solutions firm dedicated to building globally competitive leaders, strengthening institutions, and delivering innovative, high-impact solutions to individuals and organisations across diverse sectors.`,
-  `He currently serves as Chairman of the Centre for Governance, Economy and Development and Executive Director of the International Institute for Governance and Economy — both platforms at the forefront of policy dialogue, leadership education, and sustainable economic development across the African continent.`,
-  `Emmanuel Agida is an accomplished author with several books to his credit, addressing themes of leadership, governance, and the African development agenda.`,
-  `In 2019, he founded the Emmanuel Agida Foundation, the philanthropic and social impact arm of the EAI ecosystem. Through targeted scholarships, humanitarian relief to displaced families, and robust youth empowerment initiatives, the Foundation has directly impacted over 3,000 young Africans and families — particularly women, children, and underserved communities.`,
+  `Adetunwase Adenle is a Nigerian art educator, visual artist, and social entrepreneur. His work uses creativity, education, and technology to expand opportunities for children and young people in underserved communities.`,
+  `He founded Slum Art Foundation, a Lagos-based nonprofit that supports children through art workshops, mentorship, literacy, and skills training. Its community work includes the Pet Bottle School in Ijora-Badia, built with recycled plastic bottles.`,
+  `A four-time Guinness World Records holder, Adenle has helped bring large-scale creative and learning projects to life. His work connects art with practical education, environmental awareness, and community development.`,
+  `He also works in environmental innovation with GoCycle, helping build systems that turn electronic waste into recoverable resources and create opportunities for informal collectors.`,
 ];
 
 const EXTRA_PARAGRAPHS = [
-  `As an economic enthusiast and development advocate, Emmanuel's philosophy is anchored on the conviction that 'economic freedom is not a privilege to be inherited, but a destiny to be engineered — and that the transformation of any nation begins not with its resources, but with the quality of its people'. He believes that when minds are shaped with purpose and nations are built with principle, prosperity becomes not an aspiration but an inevitability.`,
-  `In 2021, Emmanuel Agida served as Special Assistant to the Osun State Government, making history as the youngest political officeholder in Nigeria at the age of 17 — a milestone that cemented his reputation as a generational voice in African governance and public service.`,
-  `Emmanuel Agida is an active member of several distinguished national and international professional bodies, including the World Economic Forum (WEF), Switzerland; the Chartered Institute of Public Relations and Politics, Ghana, where he holds an Honorary Doctoral Fellowship; and Amnesty International, London. He holds a Bachelor's degree in Political Science from the University of Benin.`,
+  `Slum Art Foundation was founded to help children in underserved communities discover their creative abilities and build confidence through sustained learning and mentorship.`,
+  `Adenle studied Fine and Applied Art at the Federal College of Education (Technical), Akoka, Lagos. His work has included community exhibitions and creative projects that bring young people together around art and social issues.`,
+  `His recent work also explores digital storytelling and environmental innovation, including initiatives that introduce children to animation and emerging creative technologies.`,
 ];
 
 const AboutMe = () => {
@@ -105,7 +103,7 @@ const AboutMe = () => {
 
           <div className="flex flex-col mt-5 gap-2">
             <Heading as="h3" className="lg:text-4xl font-bold text-primaryBlack">
-              Who Is <span className="text-primaryGold">Emmanuel Agida?</span>
+              Who Is <span className="text-primaryGold">Adetunwase Adenle?</span>
             </Heading>
 
             <Heading as="h3" className="lg:text-4xl font-bold min-h-12 text-primaryBlack">
@@ -156,8 +154,8 @@ const AboutMe = () => {
               style={{ height: imageHeight ? `${imageHeight}px` : "auto" }}
             >
               <Image
-                src="/emmanuelagida_portrait.svg"
-                alt="Emmanuel Agida"
+                src="https://cdn.guardian.ng/wp-content/uploads/2019/03/My-Freedom-Day.jpg"
+                alt="Adetunwase Adenle with Slum Art children at the My Freedom Day event"
                 className="w-full h-full grayscale object-cover object-top"
                 width={400}
                 height={400}
@@ -169,8 +167,8 @@ const AboutMe = () => {
             {/* Image — mobile */}
             <div className="block lg:hidden w-full">
               <Image
-                src="/emmanuelagida_portrait.svg"
-                alt="Emmanuel Agida"
+                src="https://cdn.guardian.ng/wp-content/uploads/2019/03/My-Freedom-Day.jpg"
+                alt="Adetunwase Adenle with Slum Art children at the My Freedom Day event"
                 className="w-full min-h-70 grayscale object-cover object-top"
                 width={400}
                 height={400}

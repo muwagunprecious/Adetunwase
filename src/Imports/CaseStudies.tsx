@@ -23,8 +23,8 @@ const CaseStudies = () => {
               Case studies in <span className="text-primaryGold"> Leadership and Impact</span>
             </Heading>
             <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md tracking-tight font-normal">
-              An in-depth look at selected initiatives—highlighting the challenges addressed, 
-              strategies implemented, and measurable outcomes achieved through focused leadership and execution.
+              A closer look at projects connecting art education, environmental
+              innovation, and opportunity for underserved communities.
             </div>
           </div>
 

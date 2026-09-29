@@ -1,29 +1,29 @@
-import { Trophy, Lightbulb, Users, Handshake } from "lucide-react";
+import { Trophy, Lightbulb, Users, Palette } from "lucide-react";
 import { StatItem } from "@/types/stats";
 
 export const stats: StatItem[] = [
   {
     id: 1,
     icon: Trophy,
-    number: "5+",
-    label: "Years of Leadership Experience",
+    number: "4",
+    label: "Guinness World Records",
   },
   {
     id: 2,
-    number: "10+",
-    label: "Initiatives Led",
+    number: "2017",
+    label: "Slum Art Foundation Founded",
     icon: Lightbulb,
   },
   {
     id: 3,
-    number: "10+",
-    label: "Communities Impacted",
+    number: "Lagos",
+    label: "Community Roots",
     icon: Users,
   },
   {
     id: 4,
-    number: "20+",
-    label: "Strategic Partnerships",
-    icon: Handshake,
+    number: "Art",
+    label: "Education and Innovation",
+    icon: Palette,
   },
 ];

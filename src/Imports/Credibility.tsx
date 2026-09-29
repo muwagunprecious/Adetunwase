@@ -49,21 +49,20 @@ const Credibility = () => {
       {/* Header */}
       <Container>
         <div className="mt-10 border-b border-white/10">
-          <Badge title="CREDIBILITY" />
+          <Badge title="HIGHLIGHTS" />
 
           <div className="flex flex-col mt-5 gap-2">
             <Heading
               as="h3"
               className="lg:text-4xl font-bold animate-fade-in-up"
             >
-              A Track record of my{" "}
-              <span className="text-primaryGold">leadership journey.</span>
+              Creativity in service of{" "}
+              <span className="text-primaryGold">community impact.</span>
             </Heading>
 
             <Paragraph className="mb-10 sm:px-0 lg:w-3/5 text-md">
-              Half a decade of strategic leadership marked by measurable
-              outcomes, cross-sector influence, and a consistent track record of
-              delivering results at scale.
+              From community art education to environmental innovation, the work
+              centers on practical opportunities for young people and underserved communities.
             </Paragraph>
           </div>
         </div>

@@ -2,30 +2,30 @@ import { EngagementProps } from "@/types/engagements";
 
 export const engagements: EngagementProps[] = [
   {
-    imageSrc: "/engagements/1.png",
+    imageSrc: "https://pbs.twimg.com/media/D8XkG46XkAEX0HL.jpg",
   },
   {
-    imageSrc: "/engagements/2.png",
+    imageSrc: "https://pbs.twimg.com/media/D8XkG50X4AA6sxh.jpg",
   },
   {
-    imageSrc: "/engagements/3.png",
+    imageSrc: "https://worldconnect.org.uk/files/projects/6888_IMG-6523_%281%29.jpg",
   },
   {
-    imageSrc: "/engagements/4.png",
+    imageSrc: "https://cdn.guardian.ng/wp-content/uploads/2019/03/My-Freedom-Day.jpg",
   },
   {
-    imageSrc: "/engagements/5.png",
+    imageSrc: "https://pbs.twimg.com/media/D8XkG46XkAEX0HL.jpg",
   },
   {
-    imageSrc: "/engagements/6.png",
+    imageSrc: "https://worldconnect.org.uk/files/projects/6888_IMG-6523_%281%29.jpg",
   },
   {
-    imageSrc: "/engagements/7.png",
+    imageSrc: "https://pbs.twimg.com/media/D8XkG50X4AA6sxh.jpg",
   },
   {
-    imageSrc: "/engagements/8.png",
+    imageSrc: "https://cdn.guardian.ng/wp-content/uploads/2019/03/My-Freedom-Day.jpg",
   },
   {
-    imageSrc: "/engagements/9.png",
+    imageSrc: "https://worldconnect.org.uk/files/projects/6888_IMG-6523_%281%29.jpg",
   },
 ];

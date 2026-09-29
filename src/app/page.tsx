@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <main className="flex flex-col lg:mt-50 mt-40 flex-1 font-jost items-center justify-center bg-gray-50 dark:bg-black">
       <Hero
-        title="Raising Leaders. Transforming Minds. Driving Impact."
-        description="You can love people without leading them, but you can't lead people without loving them."
+        title="Art. Education. Opportunity. Building brighter futures."
+        description="Adetunwase Adenle is an artist, educator, and social entrepreneur using creativity to open new possibilities for children and communities."
       />
       <Credibility />
       <AboutMe />
@@ -26,12 +26,9 @@ export default function Home() {
       <Media />
       <Leadership />
       <Contact />
-      <Testimonials/>
+      <Testimonials />
       <SocialLinks />
       <Footer />
-      {/* Add your Compoent Here */}
     </main>
   );
 }
-
-// add a hover-to-tilt effect to the image in the about me section.

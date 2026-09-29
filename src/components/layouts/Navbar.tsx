@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { NavLinks } from "@/constants/navbar";
 // import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import Button from "../ui/Button";
 import { CircleArrowOutUpRight, CircleX, Menu, X } from "lucide-react";
 
@@ -68,19 +67,6 @@ const Navbar = () => {
           : "-translate-y-full opacity-0 pointer-events-none"
         }`}
       >
-        {/* Brand banner */}
-        <div className="bg-black w-full">
-          <Image
-            src="/emmanuelagida_brand_banner.svg"
-            alt="Emmanuel Agida Brand Banner"
-            priority
-            draggable={false}
-            width={80}
-            height={80}
-            className="lg:w-auto lg:h-auto w-80 flex mx-auto"
-          />
-        </div>
-
         {/* Desktop & Tablet Navbar */}
         <nav className="bg-primaryBlack font-primaryFont hidden justify-between items-center px-4 py-6 sm:px-6 lg:px-6 w-full lg:flex">
           {/* Brand logo */}
@@ -88,15 +74,7 @@ const Navbar = () => {
             href="/"
             className="font-black tracking-tighter text-base flex items-center justify-center gap-2"
           >
-            <Image
-              src="/emmanuelagida_logo.svg"
-              alt="Emmanuel Agida Logo"
-              priority
-              width={40}
-              height={40}
-              draggable={false}
-              className="w-auto h-auto"
-            />
+            <span>Adetunwase Adenle</span>
           </Link>
 
           {/* Desktop navlinks */}
@@ -138,14 +116,7 @@ const Navbar = () => {
             className="font-black tracking-tighter text-base flex items-center justify-center gap-2"
             onClick={handleLinkClick}
           >
-            <Image
-              src="/emmanuelagida_logo.svg"
-              alt="Emmanuel Agida Logo"
-              priority
-              width={100}
-              height={100}
-              className="lg:w-auto lg:h-auto w-14"
-            />
+            <span className="text-white">Adetunwase Adenle</span>
           </Link>
 
           {/* Mobile menu button */}

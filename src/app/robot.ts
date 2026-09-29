@@ -1,6 +1,6 @@
 export default function robots() {
     return {
         rules: { userAgent: "*", allow: "/" },
-        sitemap: "https://emmanuelagida.com/sitemap.xml",
+        sitemap: "https://www.adetunwase.com/sitemap.xml",
     };
 }

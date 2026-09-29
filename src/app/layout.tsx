@@ -19,31 +19,29 @@ export const viewport: Viewport = {
 
 // Metadata
 export const metadata: Metadata = {
-  metadataBase: new URL("https://emmanuelagida.com"),
+  metadataBase: new URL("https://www.adetunwase.com"),
 
   title: {
-    default: "Emmanuel Agida — Leader | Entrepreneur | Catalyst",
-    template: "%s | Emmanuel Agida",
+    default: "Adetunwase Adenle — Artist | Educator | Social Entrepreneur",
+    template: "%s | Adetunwase Adenle",
   },
   description:
-    "Emmanuel Agida is a purpose-driven leader, strategist, and entrepreneur committed to building systems, platforms, and people for long-term impact.",
+    "Adetunwase Adenle is a Nigerian art educator, visual artist, and social entrepreneur using creativity, education, and innovation to support underserved communities.",
   keywords: [
-    "Emmanuel Agida",
-    "leader",
-    "entrepreneur",
-    "digital strategist",
-    "catalyst",
-    "speaker",
-    "Africa",
-    "youth",
-    "impact",
-    "Achievers Summit",
-    "GWR | Guiness World record",
-    "100 Under40 Awards",
+    "Adetunwase Adenle",
+    "art educator",
+    "visual artist",
+    "social entrepreneur",
+    "Slum Art Foundation",
+    "community art education",
+    "Nigeria",
+    "Guinness World Records",
+    "circular economy",
+    "GoCycle",
   ],
-  authors: [{ name: "Emmanuel Agida", url: "https://emmanuelagida.com" }],
-  creator: "Emmanuel Agida",
-  publisher: "Emmanuel Agida",
+  authors: [{ name: "Adetunwase Adenle", url: "https://www.adetunwase.com" }],
+  creator: "Adetunwase Adenle",
+  publisher: "Adetunwase Adenle",
 
   alternates: {
     canonical: "/",
@@ -53,17 +51,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://emmanuelagida.com",
-    siteName: "Emmanuel Agida",
-    title: "Emmanuel Agida — Leader | Entrepreneur | Catalyst",
+    url: "https://www.adetunwase.com",
+    siteName: "Adetunwase Adenle",
+    title: "Adetunwase Adenle — Artist | Educator | Social Entrepreneur",
     description:
-      "Purpose-driven leader, strategist, and entrepreneur committed to building systems, platforms, and people for long-term impact.",
+      "Artist, educator, and social entrepreneur using creativity and learning to support underserved communities.",
     images: [
       {
         url: "/og-image.jpg", // 1200x630px image in /public
         width: 1200,
         height: 630,
-        alt: "Emmanuel Agida — Leader, Entrepreneur & Catalyst",
+        alt: "Adetunwase Adenle — Artist, Educator & Social Entrepreneur",
       },
     ],
   },
@@ -71,22 +69,19 @@ export const metadata: Metadata = {
   // Twitter / X
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Agida — Leader | Entrepreneur | Catalyst",
+    title: "Adetunwase Adenle — Artist | Educator | Social Entrepreneur",
     description:
-      "Purpose-driven leader, strategist, and entrepreneur committed to building systems, platforms, and people for long-term impact.",
+      "Artist, educator, and social entrepreneur using creativity and learning to support underserved communities.",
     images: ["/og-image.jpg"],
-    creator: "@emmanuelagida", // update to real handle
+    creator: "@adetunwase360",
   },
 
   // Icons
   icons: {
     icon: [
       { url: "/favicon.ico" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/apple-icon.png",
   },
 
   // PWA Manifest
@@ -110,16 +105,16 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Emmanuel Agida",
-  url: "https://emmanuelagida.com",
-  image: "https://emmanuelagida.com/og-image.jpg",
-  jobTitle: "Leader, Entrepreneur & Catalyst",
+  name: "Adetunwase Adenle",
+  url: "https://www.adetunwase.com",
+  image: "https://www.gocycle.ng/_next/image?q=75&url=%2Fimages%2Fadetunwase-adenle.jpg&w=384",
+  jobTitle: "Artist, Art Educator & Social Entrepreneur",
   description:
-    "Purpose-driven leader, strategist, and entrepreneur committed to building systems, platforms, and people for long-term impact.",
+    "Nigerian art educator, visual artist, and social entrepreneur working in community art education and environmental innovation.",
   sameAs: [
-    "https://twitter.com/emmanuelagida", // update to real handles
-    "https://linkedin.com/in/emmanuelagida",
-    "https://instagram.com/emmanuelagida",
+    "https://x.com/adetunwase360",
+    "https://linkedin.com/in/adetunwase-adenle-7359791b",
+    "https://instagram.com/adetunwase360",
   ],
 };
 

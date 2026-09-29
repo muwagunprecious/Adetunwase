@@ -24,11 +24,10 @@ const Leadership = () => {
               as="h3"
               className="lg:text-4xl font-bold text-primaryBlack tracking-tighter w-full lg:w-1/3"
             >
-              Leadership in Action.
+              Creativity in Action.
             </Heading>
             <div className="w-full lg:w-2/5 text-primaryBlack/40 text-md font-normal">
-              A curated glimpse into key moments—engaging with communities,
-              leading initiatives, and shaping conversations that matter.
+              Slum Art children creating, learning, and sharing their work in Ijora-Badia.
             </div>
           </div>
 
